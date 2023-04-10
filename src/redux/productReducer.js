@@ -1,8 +1,8 @@
 export const productData = (data = [], action) => {
   switch (action.type) {
-    case "PRODUCT_LIST":
+    case "SET_PRODUCT_LIST":
       console.warn("PRODUCT_LIST condition", action);
-      return [action.data];
+      return [...action.data];
     default:
       return data;
   }

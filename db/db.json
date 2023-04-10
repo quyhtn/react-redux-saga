@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Neutrogena Wet Skin Swim-Humidity-Sweat Sunblock",
+      "color": "Blue",
+      "price": 1,
+      "category": "Framing (Wood)",
+      "brand": "TOTAL PRO-JES",
+      "photo": "https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043"
+    },
+    {
+      "id": 2,
+      "name": "ELCURE Vitamin C Serum",
+      "color": "Turquoise",
+      "price": 2,
+      "category": "Doors, Frames & Hardware",
+      "brand": "Rifabutin",
+      "photo": "https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043"
+    },
+    {
+      "id": 3,
+      "name": "Lansoprazole",
+      "color": "Blue",
+      "price": 3,
+      "category": "Framing (Wood)",
+      "brand": "JEUNCELL Hair restorer and Hair Growth Solution",
+      "photo": "https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043"
+    },
+    {
+      "id": 4,
+      "name": "Levonorgestrel",
+      "color": "Indigo",
+      "price": 4,
+      "category": "EIFS",
+      "brand": "PAROXETINE",
+      "photo": "https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043"
+    },
+    {
+      "id": 5,
+      "name": "Pepcid",
+      "color": "Crimson",
+      "price": 5,
+      "category": "Granite Surfaces",
+      "brand": "Nitroglycerin Transdermal Delivery System",
+      "photo": "https://cdn.shopify.com/s/files/1/0070/7032/files/image5_4578a9e6-2eff-4a5a-8d8c-9292252ec848.jpg?v=1620247043"
+    }
+  ]
+}
