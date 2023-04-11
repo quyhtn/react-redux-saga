@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { productSearch } from "../redux/productAction";
@@ -5,7 +6,24 @@ import { productSearch } from "../redux/productAction";
 const Header = () => {
   const result = useSelector((state) => state.cartData);
   const dispatch = useDispatch();
-  console.warn("data in header", result);
+  // console.warn("data in header", result);
+  const typingTimeoutRef = useRef(null);
+  // useRef giúp tạo ra 1 object và object này không thay đổi giữa những lần render
+
+  const handleSearch = (e) => {
+    const value = e.target.value;
+    // cần tạo 1 var to keep e.target.value vì e.target.value sẽ release
+
+    // debounce
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+
+    typingTimeoutRef.current = setTimeout(() => {
+      dispatch(productSearch(value));
+    }, 500);
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -14,7 +32,7 @@ const Header = () => {
       <div className="search-box">
         <input
           type="text"
-          onChange={(event) => dispatch(productSearch(event.target.value))}
+          onChange={handleSearch}
           placeholder="Search Product"
         />
       </div>

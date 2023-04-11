@@ -9,7 +9,7 @@ export const productList = () => {
 };
 
 export const productSearch = (query) => {
-  console.warn(`query search`, query);
+  // console.warn(`query search`, query);
   return {
     type: "SEARCH_PRODUCT",
     query,
