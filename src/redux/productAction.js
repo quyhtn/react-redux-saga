@@ -7,3 +7,11 @@ export const productList = () => {
     type: "PRODUCT_LIST",
   };
 };
+
+export const productSearch = (query) => {
+  console.warn(`query search`, query);
+  return {
+    type: "SEARCH_PRODUCT",
+    query,
+  };
+};
